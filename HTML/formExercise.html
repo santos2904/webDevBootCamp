@@ -25,10 +25,10 @@
 <label for="email">Email:</label>
 <input id="email" type="email" placeholder="your email" required>
 <label for="password">Password:</label>
-<input id="password" type="password" placeholder="your password" required>
+<input id="password" type="password" placeholder="your password" minlength="5" maxlength="10" required>
 <p></p>
 Birthday
-<select>
+<select name="month">
 <option value="Month">Month</option>
 <option value="Month">January</option>
 <option value="Month">February</option>
@@ -36,7 +36,7 @@ Birthday
 <option value="Month">April</option>
 </select>
 
-<select>
+<select name="day">
 <option value="Day">Day</option>
 <option value="Day">1</option>
 <option value="Day">2</option>
@@ -45,7 +45,7 @@ Birthday
 </select>
 
 
-<select>
+<select name="year">
 <option value="Year">Year</option>
 <option value="Year">1999</option>
 <option value="Year">2000</option>
