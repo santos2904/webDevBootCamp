@@ -5,60 +5,67 @@
 </head>
 <body>
 <h1>Register</h1>
-<form>
-<label for="firstName">First Name:</label>
-<input id="firstName" type="text" placeholder="John" required>
+	<form>
+		<label for="firstName">First Name:</label>
+		<input id="firstName" type="text" placeholder="John" required>
 
-<label for="lastName">Last Name:</label>
-<input id="lastName" type="text" placeholder="Smith" required>
-<p>
-<label for="gender">Male</label>
-<input type="radio" name="gender" required>
+		<label for="lastName">Last Name:</label>
+		<input id="lastName" type="text" placeholder="Smith" required>
 
-<label for="gender">Female</label>
-<input type="radio" name="gender" required>
+	<div>
+		<label for="gender">Male</label>
+		<input type="radio" name="gender" value="male" required>
 
-<label for="gender">Other</label>
-<input type="radio" name="gender" required>
-</p>
+		<label for="gender">   Female   </label>
+		<input type="radio" name="gender" value="female"required>
 
-<label for="email">Email:</label>
-<input id="email" type="email" placeholder="your email" required>
-<label for="password">Password:</label>
-<input id="password" type="password" placeholder="your password" minlength="5" maxlength="10" required>
-<p></p>
-Birthday
-<select name="month">
-<option value="Month">Month</option>
-<option value="Month">January</option>
-<option value="Month">February</option>
-<option value="Month">March</option>
-<option value="Month">April</option>
-</select>
+		<label for="gender">Other</label>
+		<input type="radio" name="gender" value="other" required>
+	</div>
 
-<select name="day">
-<option value="Day">Day</option>
-<option value="Day">1</option>
-<option value="Day">2</option>
-<option value="Day">3</option>
-<option value="Day">4</option>
-</select>
+	<div>
+		<label for="email">Email:</label>
+		<input id="email" type="email" placeholder="your email" required>
 
+		<label for="password">Password:</label>
+		<input id="password" type="password" placeholder="your password" minlength="5" maxlength="10" required title="test">
+	</div>
 
-<select name="year">
-<option value="Year">Year</option>
-<option value="Year">1999</option>
-<option value="Year">2000</option>
-<option value="Year">2001</option>
-<option value="Year">2002</option>
-</select>
-<p>
-I agree to the terms and conditions
-<input type="checkbox" name="checkbox" required>
-</p>
-<p>
+<div>
+	<label>
+		Birthday:
+		<select name="month">
+			<option>Month</option>
+			<option>Jan</option>
+			<option">Feb</option>
+			<option="Month">Mar</option>
+			<option="Month">Apr</option>
+		</select>
+
+		<select name="day">
+			<option>Day</option>
+			<option>1</option>
+			<option>2</option>
+			<option>3</option>
+			<option>4</option>
+		</select>
+
+		<select name="year">
+			<option>Year</option>
+			<option>1999</option>
+			<option>2000</option>
+			<option>2001</option>
+			<option>2002</option>
+		</select>
+	</label>
+</div>
+
+<div>
+	<label for="terms"> I agree to the terms and conditions </label>
+	<input id="terms" type="checkbox" name="agree" required>
+</div>
+
 <input type="submit">
-</p>
 
 </form>
 </body>
