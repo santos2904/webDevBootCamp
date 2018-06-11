@@ -1,0 +1,17 @@
+/*
+Colors in CSS
+Hexadecimal
+# + String of 6 hexadecimal numbers (from 0 to F)
+*/
+
+h1 {
+	color: #00000;
+}
+
+h2 {
+	color: #4B0082;
+}
+
+h3 {
+	color: #FF1493;
+}
