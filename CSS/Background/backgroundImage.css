@@ -1,0 +1,8 @@
+/*Background Image
+The background property can also set a background image*/
+
+body {
+	background: url(http://soluszelt.com/style/HTMLCSSJS_ICON.png);
+	background-repeat: no-repeat; /*remove tiles*/
+	background-size: cover; /*stretch the image to fit the screen*/
+}

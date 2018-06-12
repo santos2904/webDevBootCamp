@@ -3,9 +3,15 @@ h1 {
 }
 
 h4 {
-	color: purple;
+	color: blue;
 }
 
 li {
-	color: blue;
+	color: green;
+}
+
+body {
+	background: url(http://soluszelt.com/style/HTMLCSSJS_ICON.png);
+	background-repeat: no-repeat;
+	background-size: cover;
 }
