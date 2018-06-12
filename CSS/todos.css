@@ -9,3 +9,7 @@ li {
 #aidee {
 	background: red;
 }
+
+.ticked {
+	text-decoration: line-through;
+}
