@@ -65,14 +65,25 @@ div p {
 
 /*Make only inputs with type 'text' have a gray background*/
 
+input [type=text] {
+	background: gray;
+}
 
 /* Give both <p>'s inside the 3rd <div> a pink background*/
-
+div:nth-of-type(3){
+	background: pink;
+}
 
 /* Give the 2nd <p> inside the 3rd <div> a 5px white border*/
-
+div p:nth-of-type(2) {
+	border: 5px solid white;
+}
 
 /* Make the <em> in the 3rd <div> element white and 20px font(font-size:20px)*/
+div em {
+	color: white
+	font-size: 20px;
+}
 
 
 
