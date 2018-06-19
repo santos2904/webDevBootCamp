@@ -1,10 +1,10 @@
 /*font-family*/
 p {
-	font-family: "Arial"; /*should be in quotes if the font has a number example: "12 ArialBlack"*/
+	font-family: "Pacifico"; /*should be in quotes if the font has a number example: "12 ArialBlack"*/
 }
 
 h1 {
-	font-family: Georgia;
+	font-family: "Indie Flower";
 }
 
 /*font-size*/
