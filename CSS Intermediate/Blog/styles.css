@@ -1,0 +1,31 @@
+h1 {
+	text-transform: capitalize;
+	font-family: Source Sans Pro;
+}
+
+div {
+	text-transform: uppercase;
+	color: #3498db;
+	font-weight: 800;
+	font-family: Source Sans Pro;
+	letter-spacing: 3px;
+}
+
+.first {
+	font-family: Source Sans Pro;
+	font-size: 20px;
+	border-left: 5px solid gray;
+	padding-left: 10px;
+}
+
+p {
+	font-family: Source Sans Pro;
+	font-size: 20px;
+}
+
+body {
+	border: 20px solid gray;
+	padding: 20px;
+	margin-left: 20%;
+	margin-right: 20%;
+}
