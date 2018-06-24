@@ -2,7 +2,14 @@
 <html>
 <head>
 	<title>Bootstrap Grid System</title>
-	<link rel="stylesheet" type="text/css" href=https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
+
+	<style type="text/css">
+		.gray {
+			background: lightgray;
+			border: 1px solid black;
+		}
+	</style>
 </head>
 <body>
 <!-- ==================================== -->
@@ -11,5 +18,29 @@
 <!-- 2. Understand the 4 different sizes  -->
 <!-- 3. Write Nested Grids				  -->
 <!-- ==================================== -->
+<div class="container">
+	<div class="row">
+		<div class="col-lg-12 gray">COL LG 12</div>
+		<div class="col-lg-6 gray">COL LG 6</div>	
+		<div class="col-lg-6 gray">COL LG 6</div>
+	</div>
+	<div class="row">
+		<div class="col-lg-3 gray">COL LG 3</div>
+		<div class="col-lg-3 gray">COL LG 3</div>
+		<div class="col-lg-3 gray">COL LG 3</div>
+		<div class="col-lg-3 gray">COL LG 3</div>
+	</div>	
+	<div class="row">
+		<div class="col-lg-2 gray">COL LG 2</div>	
+		<div class="col-lg-8 gray">COL LG 8</div>
+		<div class="col-lg-2 gray">COL LG 2</div>
+	</div>
+	<div class="row">
+		<div class="col-lg-2 gray">COL LG 2</div>
+		<div class="col-lg-4 gray">COL LG 4</div>
+		<div class="col-lg-4 gray">COL LG 4</div>
+		<div class="col-lg-2 gray">COL LG 2</div>
+	</div>	
+</div>
 </body>
 </html>
