@@ -1,0 +1,19 @@
+Section 7, Lecture 81
+Hi Everyone!
+
+In the next video we will be using a font/icon library called Font Awesome. Font Awesome can now be found at http://fontawesome.io/
+
+It should also be noted that Font Awesome has released a newer version than the one being used in this course. The syntax has changed ever so slightly. For example, to insert a retro camera icon you would use the following markup:
+
+<i class="fas fa-camera-retro"></i> 
+
+You'll notice that instead of the class name "fa", which we'll be using in this course, we have "fas". The "s" at the end stands for "solid". The changes are backwards compatible though, you can write it how Colt does in the video and that should also work.
+
+I recommend using the following CDN script for the latest version:
+
+<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+See here for more information and examples about the above mentioned changes.
+
+Thanks,
+Ian
+Course TA
