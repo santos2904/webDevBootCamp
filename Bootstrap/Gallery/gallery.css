@@ -4,4 +4,21 @@ body {
 
 .jumbotron {
 	color: #2c3e50;
+	background: #ecf0f1;
+}
+
+.navbar-inverse {
+	background: #2c3e50;
+}
+
+.navbar-inverse .navbar-brand {
+	color: #4dadf7;
+}
+
+i {
+	color: #0c8599;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+	color: white;
 }
