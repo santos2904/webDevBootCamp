@@ -12,16 +12,19 @@ html {
 
 h1 {
 	font-weight:  700;
-	font-stretch: 5em;
+	font-size: 5em;
 }
 
 hr {
 	width: 400px;
-	border-top: 1px solid #f8f8f8;
-	border-bottom: 2px solid rgba(0,0,0,0.2);
+	border-top: 1px solid #f8f8f8;	/*adds border to horizonal rule*/
+	border-bottom: 2px solid rgba(0,0,0,0.2); /*adds shadow under the hr*/
 }
 
 #content {
 	text-align: center;
 	padding-top: 25%;
+	text-shadow: 0px 4px 3px rgba(0,0,0,0.4),	/*Adds shadow to the text content*/
+				 0px 8px 12px rgba(0,0,0,0.1),
+				 0px 16px 24px rgba(0,0,0,0.1);
 }
