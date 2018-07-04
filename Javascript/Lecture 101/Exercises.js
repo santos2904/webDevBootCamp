@@ -39,3 +39,12 @@ false
 
 !NaN
 true
+
+Exercise 3
+
+var str = ""
+var msg = "haha!"
+var isFunny = "false"
+
+!(( str || msg ) && isFunny) /*!(false||true) && true) = false*/
+false
