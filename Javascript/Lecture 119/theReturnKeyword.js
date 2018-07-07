@@ -14,7 +14,7 @@ var capital = capitalize(city);  //"Paris"
 
 
 
- //The return keyword stops execution of a function
+//The return keyword stops execution of a function
 
 function capitalize(str) {
   if(typeof str === "number") {
@@ -42,4 +42,3 @@ function capitalize(str) {
 var capitalize = function(str) {
   return str.charAt(0).toUpperCase() + str.slice(1);
 }
-
