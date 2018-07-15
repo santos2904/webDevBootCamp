@@ -21,4 +21,13 @@ function print(array){
 }
 //print(comments.data);
 
+//this
+var comments = {};
+comments.data = ["Good job!", "lol", "noice", "Lame..."];
+comments.print = function(){
+	this.data.forEach(function(element){
+		console.log(element);
+	});
+}
 
+//comments.print()
