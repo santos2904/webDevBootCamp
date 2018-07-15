@@ -12,4 +12,13 @@ var obj = {
 // obj.birthYr(2018,29)
 // 1989
 
+var comments = {};
+comments.data = ["Good job!", "lol", "noice", "Lame..."];
+function print(array){
+	array.forEach(function(element){
+		console.log(element);
+	});
+}
+//print(comments.data);
+
 
