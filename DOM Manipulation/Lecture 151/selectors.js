@@ -21,4 +21,6 @@ var highlight = document.querySelector("#highlight");
 var bolded = document.querySelector(".bolded"); 
 var h1 = document.querySelector("h1"); 
 
-
+//querySelectorAll
+var bolded = document.querySelectorAll(".bolded"); 
+var h1 = document.querySelector("h1"); 
