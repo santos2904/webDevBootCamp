@@ -1,0 +1,22 @@
+body {
+	background: black;
+	color: white;
+}
+h1{
+	color: white;
+}
+h4{
+	color: green;
+}
+p{
+	color:green;
+}
+#blue {
+	color: rgb(60, 120, 216);
+}
+#para{
+	color: yellow;
+}
+.div1 {
+	padding-top: 20%;
+}
