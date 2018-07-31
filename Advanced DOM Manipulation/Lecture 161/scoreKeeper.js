@@ -48,4 +48,6 @@ function reset(){
 
 numInput.addEventListener("change", function(){
 	winDisplay.textContent = numInput.value;
+	winningScore = Number(numInput.value);
+	reset();
 })
