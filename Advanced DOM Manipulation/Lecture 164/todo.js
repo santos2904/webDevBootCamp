@@ -1,7 +1,7 @@
 var lis = document.querySelectorAll("li");
-var red = document.getElementById("red")
-var green = document.getElementById("green")
-var blue = document.getElementById("blue")
+var red = document.getElementById("red");
+var green = document.getElementById("green");
+var blue = document.getElementById("blue");
 
 for(var i = 0; i < lis.length; i++) {
 lis[i].addEventListener("mouseover", function(){
@@ -12,21 +12,21 @@ lis[i].addEventListener("mouseout", function(){
 	});
 }
 
+
+//rgb
 red.addEventListener("mouseover", function(){
 	this.style.color = "red";
-});
-red.addEventListener("click", function(){
-	this.style.color = "black";
+	this.style.fontSize = "300%";
 });
 green.addEventListener("mouseover", function(){
 	this.style.color = "green";
-});
-green.addEventListener("click", function(){
-	this.style.color = "black";
+	this.style.fontSize = "300%";
 });
 blue.addEventListener("mouseover", function(){
 	this.style.color = "blue";
+	this.style.fontSize = "300%";
 });
-blue.addEventListener("click", function(){
-	this.style.color = "black";
-});
+
+
+
+
