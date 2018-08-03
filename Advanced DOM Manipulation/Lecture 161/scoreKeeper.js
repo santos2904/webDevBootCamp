@@ -33,10 +33,10 @@ p2Button.addEventListener("click", function(){
 });
 
 resetButton.addEventListener("click", function(){
-	reset();
+	reset(); //reset function called back
 });
 
-function reset(){
+function reset(){ //make reset a function and call it later 
 	p1Score = 0;
 	p2Score = 0;
 	p1.textContent = 0;
@@ -48,6 +48,6 @@ function reset(){
 
 numInput.addEventListener("change", function(){
 	winDisplay.textContent = numInput.value;
-	winningScore = Number(numInput.value);
-	reset();
+	winningScore = Number(numInput.value); // sets the numInput value to a number instead of a string
+	reset(); // reset the score if the winning score value is changed mid game.
 })
