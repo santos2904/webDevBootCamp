@@ -1,30 +1,30 @@
 var lis = document.querySelectorAll("li");
-var red = document.getElementById("red");
-var green = document.getElementById("green");
-var blue = document.getElementById("blue");
+var sred = document.getElementById("red");
+var sgreen = document.getElementById("green");
+var sblue = document.getElementById("blue");
 
 for(var i = 0; i < lis.length; i++) {
 lis[i].addEventListener("mouseover", function(){
-	this.style.color = "green";
+	this.classList.add("selected");
 	});
 lis[i].addEventListener("mouseout", function(){
-	this.style.color = "black";
+	this.classList.remove("selected");
 	});
+lis[i].addEventListener("click", function(){
+	this.classList.toggle("done");
+});
 }
 
 
 //rgb
-red.addEventListener("mouseover", function(){
-	this.style.color = "red";
-	this.style.fontSize = "300%";
+sred.addEventListener("mouseover", function(){
+	this.classList.toggle("redcl");
 });
-green.addEventListener("mouseover", function(){
-	this.style.color = "green";
-	this.style.fontSize = "300%";
+sgreen.addEventListener("mouseover", function(){
+	this.classList.toggle("greencl");
 });
-blue.addEventListener("mouseover", function(){
-	this.style.color = "blue";
-	this.style.fontSize = "300%";
+sblue.addEventListener("mouseover", function(){
+	this.classList.toggle("bluecl");
 });
 
 
