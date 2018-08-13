@@ -1,3 +1,4 @@
+//ColorGameV1.0
 var numSquares = 6;
 var colors = generateRandomColors(numSquares);
 var squares = document.querySelectorAll(".square");
