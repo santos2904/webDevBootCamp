@@ -1,4 +1,4 @@
-//ColorGameV1.2
+//ColorGameV1.3 [refactor]
 var numSquares = 6;
 var colors = [];
 var pickedColor;
