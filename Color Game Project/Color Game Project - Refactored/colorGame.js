@@ -1,4 +1,4 @@
-//ColorGameV1.1
+//ColorGameV1.2
 var numSquares = 6;
 var colors = [];
 var pickedColor;
@@ -12,7 +12,12 @@ var modeButtons = document.querySelectorAll(".mode");
 init();
 
 function init(){
-	//mode buttons event listeners
+	setupModeButtons();
+	setupSquares();
+	reset();
+}
+
+function setupModeButtons(){
 	for(var i = 0; i < modeButtons.length; i++){
 		modeButtons[i].addEventListener("click", function(){
 			modeButtons[0].classList.remove("selected");
@@ -22,8 +27,9 @@ function init(){
 			reset();
 		});
 	}
+}
 
-	//add initial colors to squares
+function setupSquares(){
 	for(var i = 0; i < squares.length; i++){ 
 		squares[i].addEventListener("click", function(){
 			//get the color of clicked square
@@ -40,7 +46,6 @@ function init(){
 			}
 		});
 	}
-	reset();
 }
 
 function reset(){
