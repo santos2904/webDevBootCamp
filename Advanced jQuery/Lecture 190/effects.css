@@ -1,0 +1,11 @@
+div {
+	width: 120px;
+	height: 120px;
+	padding: 20px;
+	margin: 20px;
+	float: left;
+	background: gray;
+}
+#button2 {
+	display: none;
+}
