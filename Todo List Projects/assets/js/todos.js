@@ -24,3 +24,8 @@ $("input[type='text']").keypress(function(e){
 		$("ul").append("<li><span><i class='fas fa-trash-alt'></i></span> " + todo + "</li>");
 	}
 });
+
+//Show/hide "add new todo" input option by clicking the + icon
+$(".fa-plus").click(function(){
+	$("input[type='text']").fadeToggle();
+})
