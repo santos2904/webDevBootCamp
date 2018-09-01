@@ -3,15 +3,16 @@
 <head>
 	<title>Circles</title>
 	<script type="text/javascript" src="paper-full.js"></script>
+	<link rel="stylesheet" type="text/css" href="circles.css">
 	<script type="text/paperscript" canvas="myCanvas">
-		var myCircle = new Path.Circle(new Point(100, 70), 50);
-		myCircle.fillColor = 'black';
-
-		var myCircle = new Path.Circle(new Point(150, 70), 50);
-		myCircle.fillColor = 'red';
+		
+		function onKeyDown(event) {
+			var maxPoint = new Point(view.size.width, view.size.height);
+			new Path.Circle(maxPoint, 50).fillColor = 'red';
+		}		
 	</script>
 </head>
 <body>
-	<canvas id="myCanvas"> resize</canvas>
+	<canvas id="myCanvas" resize></canvas>
 </body>
 </html>
