@@ -8,21 +8,39 @@
 
 	<script type="text/paperscript" canvas="myCanvas">	
 
-	var sound = new Howl({
+	var sound1 = new Howl({
   	src: ['sounds/bubbles.mp3']
 	});
- 
-sound.play();
+
+	var sound2 = new Howl({
+  	src: ['sounds/clay.mp3']
+	});	
+
+	var sound3 = new Howl({
+  	src: ['sounds/confetti.mp3']
+	});
 
 	var circles = [];	
 
 		function onKeyDown(event) {
-			sound.play();
 			var maxPoint = new Point(view.size.width, view.size.height);
 			var randomPoint = Point.random();
 			var point = maxPoint * randomPoint;
 			var newCircle = new Path.Circle(point, 300);
-			newCircle.fillColor = 'orange';
+			if (event.key === "a") {
+				sound1.play();
+				newCircle.fillColor = "red"
+			}
+			else if (event.key === "s") {
+				sound2.play();
+				newCircle.fillColor = "green"
+			}
+			else if (event.key === "d") {
+				sound3.play();
+				newCircle.fillColor = "blue"
+			} else {
+			newCircle.fillColor = 'white';
+			}
 			circles.push(newCircle)
 		}
 
