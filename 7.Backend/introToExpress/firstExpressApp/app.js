@@ -3,7 +3,7 @@ var express = require("express");
 var app = express();
 
 app.get("/", function(req, res){
-    res.send("Scarborough uplink successful. Welcome Back Commander.");
+    res.send("Toronto uplink successful. Welcome Back Commander.");
 });
 
 app.get("/execute", function(req, res){
@@ -15,11 +15,13 @@ app.get("/shutdown", function(req, res){
 });
 
 app.get("/r/:subredditName", function(req, res){
-    res.send("Welcome to this subreddit");
+    var subreddit = req.params.subredditName;
+    res.send("WELCOME TO THE " + subreddit.toUpperCase() + " SUBREDDIT!");
 });
 
 app.get("/r/:subredditName/comments/:id/:title", function(req, res){
-    res.send("Welcome to the comment section");
+    console.log(req.params);
+    res.send("Welcome to the front page of the internet")
 });
 
 app.get("*", function(req,res){
@@ -31,7 +33,9 @@ app.listen(8000, process.env.IP , function(){
     console.log("Server has started");
     console.log("On the browser, go to:");
     console.log("http://localhost:8000/");
+    console.log("http://localhost:8000/phr33st0ffpl0x/404");
     console.log("http://localhost:8000/execute");
+    console.log("http://localhost:8000/r/type_anything_here");
     console.log("http://localhost:8000/shutdown");
 });
 
