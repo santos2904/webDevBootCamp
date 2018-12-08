@@ -6,7 +6,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Santos",
+  "keywords": [
+    "Santos"
+  ],
+  "author": "Santos V",
   "license": "ISC",
   "dependencies": {
     "ejs": "^2.6.1",
