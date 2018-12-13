@@ -25,3 +25,4 @@ app.post("/addfriend", function(req, res){
 app.listen(8000, process.env.IP, function(){
     console.log("Listening for Post Request");
 });
+
